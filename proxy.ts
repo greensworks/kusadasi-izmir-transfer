@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { DEFAULT_LOCALE, isLocale, LOCALE_COOKIE, normalizeLocale } from "@/lib/i18n";
 
+export const runtime = "edge";
+
 function getLocaleFromRequest(request: NextRequest) {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && isLocale(cookieLocale)) {
