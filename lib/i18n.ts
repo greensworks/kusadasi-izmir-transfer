@@ -3,6 +3,7 @@ export type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_LOCALE: Locale = "tr";
 export const LOCALE_COOKIE = "preferred-locale";
+export const LOCALE_STORAGE_KEY = "preferred-locale";
 
 export const SITE_CONFIG = {
   domain: "https://kusadasiizmirhavalimanitransfer.com",
