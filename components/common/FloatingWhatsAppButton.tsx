@@ -1,7 +1,7 @@
 export function FloatingWhatsAppButton() {
   return (
     <>
-      <aside className="fixed left-3 top-1/2 z-50 -translate-y-1/2">
+      <aside className="fixed left-3 top-1/2 z-50 hidden -translate-y-1/2 md:block">
         <div className="flex flex-col gap-2 rounded-xl border border-neutral-700 bg-[#151515]/90 p-2 backdrop-blur">
         <a
           href="https://www.linkedin.com/company/utopia-izmir-transfer/"

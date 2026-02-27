@@ -100,19 +100,6 @@ export function Testimonials({ locale }: TestimonialsProps) {
                 className="h-8 w-auto object-contain"
               />
             </a>
-            <Image
-              src="/images/tursab-badge.webp"
-              alt={
-                locale === "tr"
-                  ? "TÜRSAB onaylı transfer hizmet rozeti"
-                  : locale === "de"
-                    ? "TÜRSAB-geprüftes Transferabzeichen"
-                    : "TURSAB approved transfer service badge"
-              }
-              width={100}
-              height={38}
-              className="h-8 w-auto object-contain"
-            />
           </div>
         </div>
 
