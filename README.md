@@ -10,6 +10,7 @@ Next.js 16 + App Router + TypeScript + Tailwind ile geliştirilmiş çok dilli (
 - WhatsApp odaklı rezervasyon akışı
 - FAQ, testimonial, rota kartları, çift galeri (Instagram + foto galeri)
 - Responsive tasarım
+- Tam statik çıktı (`output: "export"`)
 
 ## Geliştirme
 
@@ -21,12 +22,21 @@ npm run dev
 ## Build
 
 ```bash
-npx next build --webpack
+npm run build
 ```
 
-## Production
+Build sonrası statik dosyalar `build/` klasörüne yazılır.
+
+## Cloudflare Pages
+
+- Framework preset: `None`
+- Build command: `npm run build`
+- Build output directory: `build`
+
+Bu proje statik olduğu için middleware/proxy veya Node.js runtime gerektirmez.
+
+## Local Preview
 
 ```bash
-npx next start -p 3000
+npx serve out
 ```
-
