@@ -20,7 +20,6 @@ import { buildMetadata } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ route?: string | string[] }>;
 }
 
 export function generateStaticParams() {
@@ -37,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return buildMetadata(locale as Locale);
 }
 
-export default async function LocalePage({ params, searchParams }: PageProps) {
+export default async function LocalePage({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocale(locale)) {
     notFound();
@@ -45,10 +44,6 @@ export default async function LocalePage({ params, searchParams }: PageProps) {
 
   const castLocale = locale as Locale;
   const content = getSiteContent(castLocale);
-
-  const paramsQuery = await searchParams;
-  const routeParam = Array.isArray(paramsQuery.route) ? paramsQuery.route[0] : paramsQuery.route;
-  const selectedRoute = routeParam ? decodeURIComponent(routeParam) : "";
 
   const whatsappUrl = buildWhatsAppLink(
     castLocale === "tr"
@@ -131,8 +126,8 @@ export default async function LocalePage({ params, searchParams }: PageProps) {
 
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
       <FunnelSteps locale={castLocale} />
-      <Routes content={content} locale={castLocale} />
-      <QuickBookingForm content={content} locale={castLocale} initialRoute={selectedRoute} />
+      <Routes content={content} />
+      <QuickBookingForm content={content} locale={castLocale} />
 
       <section className="mt-8 rounded-lg border border-neutral-700 bg-[#1a1a1a] p-5 sm:flex sm:items-center sm:justify-between">
         <div>

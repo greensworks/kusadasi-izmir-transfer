@@ -8,7 +8,6 @@ import { Locale, SiteContent, SITE_CONFIG } from "@/lib/i18n";
 interface QuickBookingFormProps {
   content: SiteContent;
   locale: Locale;
-  initialRoute?: string;
 }
 
 interface FormState {
@@ -27,8 +26,11 @@ const initialState: FormState = {
   passengers: "",
 };
 
-export function QuickBookingForm({ content, locale, initialRoute }: QuickBookingFormProps) {
-  const [formState, setFormState] = useState<FormState>({ ...initialState, route: initialRoute ?? "" });
+export function QuickBookingForm({ content, locale }: QuickBookingFormProps) {
+  const [formState, setFormState] = useState<FormState>({
+    ...initialState,
+    route: "",
+  });
   const [error, setError] = useState<string>("");
   const [submitted, setSubmitted] = useState<boolean>(false);
 

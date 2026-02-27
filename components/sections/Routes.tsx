@@ -1,12 +1,11 @@
-import { Locale, SiteContent } from "@/lib/i18n";
+import { SiteContent } from "@/lib/i18n";
 import Image from "next/image";
 
 interface RoutesProps {
   content: SiteContent;
-  locale: Locale;
 }
 
-export function Routes({ content, locale }: RoutesProps) {
+export function Routes({ content }: RoutesProps) {
   const ctaLabel = content.locale === "tr" ? "Bu rotayı seç" : content.locale === "de" ? "Diese Route wählen" : "Select this route";
 
   return (
@@ -40,7 +39,7 @@ export function Routes({ content, locale }: RoutesProps) {
             </div>
 
             <a
-              href={`/${locale}?route=${encodeURIComponent(card.route)}#booking-form`}
+              href="#booking-form"
               className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-[#25D366] px-4 py-2.5 text-sm font-semibold text-white transition hover:brightness-95"
             >
               {ctaLabel}

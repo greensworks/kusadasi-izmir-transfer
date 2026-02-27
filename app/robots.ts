@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { SITE_CONFIG } from "@/lib/i18n";
 
 const baseUrl = SITE_CONFIG.domain;
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
