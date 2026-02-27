@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: #111111;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #f2f2f2;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+::selection {
+  background: #f2c200;
+  color: #111111;
+}
