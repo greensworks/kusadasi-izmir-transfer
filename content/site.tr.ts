@@ -10,7 +10,7 @@ export const siteTr: SiteContent = {
     faq: "SSS",
   },
   hero: {
-    title: "Kuşadası, Davutlar ve Güzelçamlı için planlı havalimanı transferi.",
+    title: "Kuşadası, Davutlar ve Güzelçamlı İzmir Adnan Menderes Havalimanı transferi.",
     subtitle:
       "İzmir Adnan Menderes Havalimanı (ADB) çıkışından konaklama noktanıza, sabit fiyatlı ve 7/24 takip edilen ulaşım.",
     ctaPrimary: "Rezervasyon Oluştur",
