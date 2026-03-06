@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://kusadasiizmirhavalimanitransfer.com
+Sitemap: https://kusadasiizmirhavalimanitransfer.com/sitemap.xml
