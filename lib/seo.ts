@@ -15,6 +15,9 @@ export function buildMetadata(locale: Locale): Metadata {
     description: content.seo.description,
     keywords: content.seo.keywords,
     category: "travel",
+    other: {
+      "content-language": content.languageCode,
+    },
     robots: {
       index: true,
       follow: true,
@@ -32,7 +35,7 @@ export function buildMetadata(locale: Locale): Metadata {
         "tr-TR": `${SITE_CONFIG.domain}/tr`,
         "de-DE": `${SITE_CONFIG.domain}/de`,
         "en-US": `${SITE_CONFIG.domain}/en`,
-        "x-default": `${SITE_CONFIG.domain}/en`,
+        "x-default": `${SITE_CONFIG.domain}/tr`,
       },
     },
     openGraph: {

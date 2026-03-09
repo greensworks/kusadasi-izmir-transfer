@@ -28,6 +28,7 @@ function toEmbedUrl(url: string): string {
 export function InstagramGallery({ locale }: InstagramGalleryProps) {
   const [visibleSlides, setVisibleSlides] = useState(1);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadedPosts, setLoadedPosts] = useState<Record<string, boolean>>(() => (instagramPosts[0] ? { [instagramPosts[0]]: true } : {}));
   const posts = useMemo(() => instagramPosts.slice(0, MAX_DESKTOP_POSTS), []);
 
   useEffect(() => {
@@ -55,6 +56,10 @@ export function InstagramGallery({ locale }: InstagramGalleryProps) {
   const maxIndex = useMemo(() => Math.max(0, posts.length - visibleSlides), [posts.length, visibleSlides]);
   const pageCount = maxIndex + 1;
   const safeIndex = Math.min(currentIndex, maxIndex > 0 ? maxIndex : 0);
+
+  function handleLoadPost(url: string) {
+    setLoadedPosts((prev) => (prev[url] ? prev : { ...prev, [url]: true }));
+  }
 
   return (
     <section className="mt-14" id="instagram-gallery">
@@ -113,13 +118,40 @@ export function InstagramGallery({ locale }: InstagramGalleryProps) {
             <div key={url} className="shrink-0 px-1.5" style={{ width: `${100 / visibleSlides}%` }}>
               <div className="overflow-hidden rounded-xl border border-neutral-700/80 bg-[#171717]">
                 <div className="h-[560px] sm:h-[520px] lg:h-[540px]">
-                <iframe
-                  src={toEmbedUrl(url)}
-                  title={`instagram-post-${url.split("/").filter(Boolean).pop()}`}
-                  className="block h-full w-full"
-                  loading="lazy"
-                  style={{ border: 0 }}
-                />
+                  {loadedPosts[url] ? (
+                    <iframe
+                      src={toEmbedUrl(url)}
+                      title={`instagram-post-${url.split("/").filter(Boolean).pop()}`}
+                      className="block h-full w-full"
+                      loading="lazy"
+                      style={{ border: 0 }}
+                    />
+                  ) : (
+                    <div className="flex h-full flex-col items-center justify-center gap-3 bg-gradient-to-b from-[#202020] to-[#141414] p-6 text-center">
+                      <p className="text-sm text-neutral-200">
+                        {locale === "tr"
+                          ? "Instagram gönderisini görmek için yükleyin."
+                          : locale === "de"
+                            ? "Zum Anzeigen des Instagram-Beitrags bitte laden."
+                            : "Load to view this Instagram post."}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => handleLoadPost(url)}
+                        className="inline-flex rounded-lg bg-brand px-4 py-2 text-xs font-semibold text-brandDark transition hover:opacity-90"
+                      >
+                        {locale === "tr" ? "Gönderiyi Yükle" : locale === "de" ? "Beitrag laden" : "Load Post"}
+                      </button>
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-xs font-medium text-neutral-300 underline underline-offset-4 transition hover:text-white"
+                      >
+                        {locale === "tr" ? "Instagram'da aç" : locale === "de" ? "Auf Instagram öffnen" : "Open on Instagram"}
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

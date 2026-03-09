@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { HtmlLangSync } from "@/components/common/HtmlLangSync";
 import { LocaleAutoDetect } from "@/components/common/LocaleAutoDetect";
 import { Locale, isLocale, localeToBcp47 } from "@/lib/i18n";
 
@@ -19,6 +20,7 @@ export default async function LocaleLayout({
 
   return (
     <>
+      <HtmlLangSync lang={localeToBcp47(castLocale)} />
       <LocaleAutoDetect currentLocale={castLocale} />
       <div lang={localeToBcp47(castLocale)}>{children}</div>
     </>

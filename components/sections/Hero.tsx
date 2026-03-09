@@ -21,7 +21,9 @@ export function Hero({ content, whatsappUrl }: HeroProps) {
         alt={
           content.locale === "tr"
             ? "İzmir Adnan Menderes Havalimanı Kuşadası VIP transfer hizmeti arka plan görseli"
-            : "Hintergrundbild für VIP-Transfer vom Flughafen Izmir nach Kusadasi"
+            : content.locale === "de"
+              ? "Hintergrundbild für VIP-Transfer vom Flughafen Izmir nach Kusadasi"
+              : "Background image for VIP transfer service from Izmir Adnan Menderes Airport"
         }
         fill
         priority
