@@ -10,7 +10,7 @@ export const siteEn: SiteContent = {
     faq: "FAQ",
   },
   hero: {
-    title: "Transfer center for rides departing from Izmir Adnan Menderes Airport.",
+    title: "Izmir Adnan Menderes Airport Transfer Center.",
     subtitle:
       "From Izmir Adnan Menderes Airport (ADB) to your accommodation with fixed pricing and 24/7 flight tracking.",
     ctaPrimary: "Start Reservation",

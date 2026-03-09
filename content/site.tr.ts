@@ -10,7 +10,7 @@ export const siteTr: SiteContent = {
     faq: "SSS",
   },
   hero: {
-    title: "İzmir Adnan Menderes Havaalanı çıkışlı transfer merkezi.",
+    title: "İzmir Adnan Menderes Havalimanı Transfer Merkezi.",
     subtitle:
       "İzmir Adnan Menderes Havalimanı (ADB) çıkışından konaklama noktanıza, sabit fiyatlı ve 7/24 takip edilen ulaşım.",
     ctaPrimary: "Rezervasyon Oluştur",
