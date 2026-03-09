@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 
 import { FloatingWhatsAppButton } from "@/components/common/FloatingWhatsAppButton";
 import { LanguageSwitcher } from "@/components/common/LanguageSwitcher";
-import { PrepaymentPromoPopup } from "@/components/common/PrepaymentPromoPopup";
 import { QuickBookingForm } from "@/components/common/QuickBookingForm";
 import { Faq } from "@/components/sections/Faq";
 import { FunnelSteps } from "@/components/sections/FunnelSteps";
@@ -265,7 +264,6 @@ export default async function LocalePage({ params }: PageProps) {
       </div>
 
       <FloatingWhatsAppButton />
-      <PrepaymentPromoPopup locale={castLocale} whatsappUrl={whatsappUrl} delayMs={5000} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script

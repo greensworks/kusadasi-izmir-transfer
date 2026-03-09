@@ -10,7 +10,7 @@ export const siteDe: SiteContent = {
     faq: "FAQ",
   },
   hero: {
-    title: "Geplanter Flughafentransfer für Kuşadası, Davutlar und Güzelçamlı.",
+    title: "Transferzentrum für Fahrten ab dem Flughafen Izmir Adnan Menderes.",
     subtitle:
       "Vom Flughafen Izmir (ADB) bis zu Ihrer Unterkunft: fester Preis, verlässlicher Ablauf und 24/7 Flugverfolgung.",
     ctaPrimary: "Reservierung starten",

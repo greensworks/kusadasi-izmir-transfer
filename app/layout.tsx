@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 
 import "@/app/globals.css";
 import { SITE_CONFIG } from "@/lib/i18n";
@@ -14,18 +13,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
 
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-339823997"
-          strategy="afterInteractive"
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-339823997"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-339823997');",
+          }}
         />
-        <Script id="google-ads-gtag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-339823997');
-          `}
-        </Script>
       </body>
     </html>
   );

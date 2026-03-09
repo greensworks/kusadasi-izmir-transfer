@@ -10,7 +10,7 @@ export const siteEn: SiteContent = {
     faq: "FAQ",
   },
   hero: {
-    title: "Planned airport transfer for Kusadasi, Davutlar and Guzelcamli.",
+    title: "Transfer center for rides departing from Izmir Adnan Menderes Airport.",
     subtitle:
       "From Izmir Adnan Menderes Airport (ADB) to your accommodation with fixed pricing and 24/7 flight tracking.",
     ctaPrimary: "Start Reservation",
