@@ -18,8 +18,8 @@ export const siteTr: SiteContent = {
     imageAlt: "İzmir Adnan Menderes Havalimanı Kuşadası VIP transfer aracı",
   },
   routes: {
-    sectionTitle: "Öne Çıkan Güzergahlar",
-    sectionSubtitle: "Kuşadası İzmir Havalimanı Transfer için en çok tercih edilen VIP rotalar",
+    sectionTitle: "İzmir Adnan Menderes Havalimanı Çıkışlı VIP Transfer Rotaları",
+    sectionSubtitle: "Kuşadası, Davutlar ve Güzelçamlı için en çok tercih edilen İzmir havalimanı transfer güzergahları ve sabit fiyat seçenekleri",
     cards: [
       {
         route: "İzmir Adnan Menderes Havalimanı - Kuşadası Transfer",
@@ -79,19 +79,19 @@ export const siteTr: SiteContent = {
     ],
   },
   faq: {
-    sectionTitle: "Sıkça Sorulan Sorular",
+    sectionTitle: "İzmir Havalimanı Transfer Sıkça Sorulan Sorular",
     items: [
       {
         question: "Uçağım gecikirse ne olur?",
-        answer: "Uçuşunuzu anlık takip ediyoruz; gecikmelerde sizi bekliyoruz ve ek ücret almıyoruz.",
+        answer: "İzmir Adnan Menderes Havalimanı uçuşunuzu canlı takip ediyoruz; rötar durumunda sizi terminal çıkışında bekliyor ve ek bekleme ücreti almıyoruz.",
       },
       {
         question: "Ödeme seçenekleri nelerdir?",
-        answer: "Ödeme yalnızca araçta şoföre nakit veya kart ile yapılır. Ön ödeme alınmaz.",
+        answer: "İzmir havalimanı transfer ücretini araçta şoföre nakit veya kart ile ödeyebilirsiniz. Ön ödeme zorunlu değildir.",
       },
       {
-        question: "Rezervasyon iptali yapılabilir mi?",
-        answer: "24 saat öncesine kadar ücretsiz iptal ve değişiklik hakkınız mevcuttur.",
+        question: "Rezervasyon iptali ve değişiklik yapılabilir mi?",
+        answer: "Transfer saatinden 24 saat öncesine kadar ücretsiz iptal veya değişiklik yapabilirsiniz. Son dakika talepleri için WhatsApp destek hattımız yardımcı olur.",
       },
     ],
   },

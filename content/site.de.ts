@@ -79,19 +79,19 @@ export const siteDe: SiteContent = {
     ],
   },
   faq: {
-    sectionTitle: "Häufige Fragen",
+    sectionTitle: "Häufige Fragen zum Transfer ab Flughafen Izmir",
     items: [
       {
         question: "Was passiert bei Flugverspätungen?",
-        answer: "Wir verfolgen Ihren Flug live, warten bei Verspätung und berechnen keine Zusatzkosten.",
+        answer: "Wir verfolgen Ihren Flug am Flughafen Izmir Adnan Menderes live, warten bei Verspätungen am Terminalausgang und berechnen keine zusätzliche Wartegebühr.",
       },
       {
         question: "Welche Zahlungsmöglichkeiten gibt es?",
-        answer: "Die Zahlung erfolgt nur im Fahrzeug beim Fahrer per Barzahlung oder Karte. Keine Vorauszahlung erforderlich.",
+        answer: "Die Transferkosten zahlen Sie direkt im Fahrzeug beim Fahrer in bar oder mit Karte. Eine Vorauszahlung ist nicht erforderlich.",
       },
       {
-        question: "Kann ich meine Reservierung stornieren?",
-        answer: "Bis 24 Stunden vorher sind Änderung und Stornierung kostenlos möglich.",
+        question: "Sind Stornierung und Änderung möglich?",
+        answer: "Bis 24 Stunden vor Transferbeginn sind Stornierung oder Änderung kostenlos möglich. Bei kurzfristigen Fällen hilft unser WhatsApp-Support sofort weiter.",
       },
     ],
   },

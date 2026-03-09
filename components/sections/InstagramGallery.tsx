@@ -61,10 +61,18 @@ export function InstagramGallery({ locale }: InstagramGalleryProps) {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h2 className="text-2xl font-semibold text-white sm:text-3xl">
-            {locale === "tr" ? "Instagram Galeri" : locale === "de" ? "Instagram Galerie" : "Instagram Gallery"}
+            {locale === "tr"
+              ? "İzmir Havalimanı Transfer Instagram Galerisi"
+              : locale === "de"
+                ? "Instagram Galerie: Izmir Flughafen Transfer"
+                : "Izmir Airport Transfer Instagram Gallery"}
           </h2>
           <p className="mt-2 text-sm text-neutral-300 sm:text-base">
-            {locale === "tr" ? "Güncel transfer paylaşımlarımız" : locale === "de" ? "Unsere aktuellen Transfer-Beiträge" : "Our latest transfer posts"}
+            {locale === "tr"
+              ? "İzmir Adnan Menderes çıkışlı Kuşadası, Davutlar ve Güzelçamlı transfer paylaşımlarımız"
+              : locale === "de"
+                ? "Aktuelle Beiträge zu Transfers ab Flughafen Izmir nach Kuşadası, Davutlar und Güzelçamlı"
+                : "Latest posts from our transfers departing Izmir Adnan Menderes Airport to Kusadasi, Davutlar and Guzelcamli"}
           </p>
         </div>
         <div className="flex items-center gap-2">

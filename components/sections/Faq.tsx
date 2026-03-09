@@ -11,10 +11,10 @@ interface FaqProps {
 export function Faq({ content }: FaqProps) {
   const ctaLabel =
     content.locale === "tr"
-      ? "Rezervasyon Formuna Geç"
+      ? "İzmir Havalimanı Transfer Formuna Geç"
       : content.locale === "de"
-        ? "Zum Reservierungsformular"
-        : "Go to Reservation Form";
+        ? "Zum Izmir-Transfer-Formular"
+        : "Go to Izmir Transfer Form";
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -42,10 +42,10 @@ export function Faq({ content }: FaqProps) {
       <div className="mt-6 rounded-lg border border-neutral-700 bg-[#1f1f1f] p-5 text-center">
         <p className="text-sm text-neutral-200">
           {content.locale === "tr"
-            ? "Uygun saat ve güzergah bilgisini ileterek rezervasyonunuzu tamamlayabilirsiniz."
+            ? "İzmir Adnan Menderes Havalimanı transfer rezervasyonu için tarih, saat ve güzergah bilginizi paylaşın; ekibimiz WhatsApp üzerinden hızlıca onaylasın."
             : content.locale === "de"
-              ? "Mit Uhrzeit- und Routenangabe können Sie Ihre Reservierung direkt abschließen."
-              : "You can complete your reservation by sharing your preferred time and route."}
+              ? "Für Ihre Transferreservierung ab Flughafen Izmir teilen Sie Datum, Uhrzeit und Route mit; unser Team bestätigt Ihre Anfrage schnell per WhatsApp."
+              : "For your Izmir Airport transfer booking, share your date, time and route, and our team will quickly confirm it on WhatsApp."}
         </p>
         <a
           href="#booking-form"

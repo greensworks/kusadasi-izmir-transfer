@@ -79,19 +79,19 @@ export const siteEn: SiteContent = {
     ],
   },
   faq: {
-    sectionTitle: "Frequently Asked Questions",
+    sectionTitle: "Izmir Airport Transfer Frequently Asked Questions",
     items: [
       {
         question: "What if my flight is delayed?",
-        answer: "We track your flight in real-time, wait in case of delay and charge no extra fee.",
+        answer: "We track your Izmir Adnan Menderes Airport flight in real time, wait for you at the terminal exit during delays, and do not charge an extra waiting fee.",
       },
       {
         question: "What payment options are available?",
-        answer: "Payment is made only in the vehicle to the driver by cash or card. No prepayment is required.",
+        answer: "You can pay your transfer fare directly to the driver in the vehicle by cash or card. No prepayment is required.",
       },
       {
-        question: "Can I cancel my reservation?",
-        answer: "Free cancellation and modification are available up to 24 hours before pickup.",
+        question: "Can I cancel or modify my reservation?",
+        answer: "You can cancel or modify your booking free of charge up to 24 hours before pickup. For last-minute requests, our WhatsApp support team responds immediately.",
       },
     ],
   },

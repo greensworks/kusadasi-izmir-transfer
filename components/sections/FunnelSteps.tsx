@@ -8,20 +8,29 @@ export function FunnelSteps({ locale }: FunnelStepsProps) {
   const steps =
     locale === "tr"
       ? [
-          { title: "Rota seçin", detail: "Transfer hattınızı belirleyin." },
-          { title: "Bilgileri girin", detail: "Tarih, saat ve yolcu sayısını yazın." },
-          { title: "WhatsApp onayı", detail: "Rezervasyonunuzu tek mesajla tamamlayın." },
+          {
+            title: "Transfer rotanızı seçin",
+            detail: "İzmir Adnan Menderes Havalimanı çıkışlı Kuşadası, Davutlar veya Güzelçamlı hattını seçin.",
+          },
+          { title: "Yolculuk bilgilerini girin", detail: "Uçuş tarihi, iniş saati ve yolcu sayısını paylaşın." },
+          { title: "WhatsApp'tan onaylayın", detail: "Rezervasyonunuzu tek mesajla kesinleştirip anında dönüş alın." },
         ]
       : locale === "de"
         ? [
-          { title: "Route wählen", detail: "Bestimmen Sie Ihre Transferstrecke." },
-          { title: "Daten eingeben", detail: "Datum, Uhrzeit und Personenzahl eintragen." },
-          { title: "WhatsApp-Bestätigung", detail: "Reservierung mit einer Nachricht abschließen." },
+          {
+            title: "Transferroute wählen",
+            detail: "Wählen Sie Ihre Strecke ab dem Flughafen Izmir Adnan Menderes nach Kuşadası, Davutlar oder Güzelçamlı.",
+          },
+          { title: "Fahrtdaten eingeben", detail: "Teilen Sie Flugdatum, Landezeit und Personenzahl mit." },
+          { title: "Per WhatsApp bestätigen", detail: "Schließen Sie Ihre Reservierung mit einer Nachricht ab und erhalten Sie sofort eine Rückmeldung." },
         ]
         : [
-          { title: "Select route", detail: "Choose your transfer line." },
-          { title: "Enter details", detail: "Add date, time and number of passengers." },
-          { title: "WhatsApp confirmation", detail: "Complete your booking with one message." },
+          {
+            title: "Choose your transfer route",
+            detail: "Select your line from Izmir Adnan Menderes Airport to Kusadasi, Davutlar or Guzelcamli.",
+          },
+          { title: "Enter trip details", detail: "Share your flight date, landing time and passenger count." },
+          { title: "Confirm on WhatsApp", detail: "Finalize your reservation with one message and get an instant response." },
         ];
 
   return (

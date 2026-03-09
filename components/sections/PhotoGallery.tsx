@@ -62,14 +62,18 @@ export function PhotoGallery({ locale }: PhotoGalleryProps) {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h2 className="text-2xl font-semibold text-white sm:text-3xl">
-            {locale === "tr" ? "Galeri" : locale === "de" ? "Galerie" : "Gallery"}
+            {locale === "tr"
+              ? "İzmir Havalimanı Transfer Fotoğraf Galerisi"
+              : locale === "de"
+                ? "Fotogalerie: Izmir Flughafen Transfer"
+                : "Izmir Airport Transfer Photo Gallery"}
           </h2>
           <p className="mt-2 text-sm text-neutral-300 sm:text-base">
             {locale === "tr"
-              ? "Transfer hizmetimizden kareler"
+              ? "Kuşadası, Davutlar ve Güzelçamlı VIP transfer hizmetimizden gerçek kareler"
               : locale === "de"
-                ? "Einblicke in unseren Transferservice"
-                : "Snapshots from our transfer service"}
+                ? "Echte Eindrücke aus unserem VIP-Transferservice nach Kuşadası, Davutlar und Güzelçamlı"
+                : "Real snapshots from our VIP transfer service to Kusadasi, Davutlar and Guzelcamli"}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -114,10 +118,10 @@ export function PhotoGallery({ locale }: PhotoGalleryProps) {
                   src={imageSrc}
                   alt={
                     locale === "tr"
-                      ? `Ütopia İzmir Transfer galeri görseli ${index + 1}`
+                      ? `İzmir Adnan Menderes Havalimanı transfer hizmeti galeri görseli ${index + 1}`
                       : locale === "de"
-                        ? `Ütopia Izmir Transfer Galeriebild ${index + 1}`
-                        : `Ütopia İzmir Transfer gallery image ${index + 1}`
+                        ? `Transfer ab Flughafen Izmir Galeriebild ${index + 1}`
+                        : `Izmir Airport transfer gallery image ${index + 1}`
                   }
                   fill
                   sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

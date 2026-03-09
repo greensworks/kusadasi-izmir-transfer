@@ -186,10 +186,10 @@ export default async function LocalePage({ params }: PageProps) {
                   className="text-brand transition hover:text-white"
                 >
                   {castLocale === "tr"
-                    ? "Ege'nin diğer destinasyonları için VIP taşımacılık"
+                    ? "İzmir havalimanı çıkışlı Ege VIP transfer rotaları"
                     : castLocale === "de"
-                      ? "VIP-Transfers zu weiteren Destinationen in der Ägäis"
-                      : "VIP transfers for other destinations in the Aegean region"}
+                      ? "Ägäis VIP-Transferrouten ab Flughafen Izmir"
+                      : "Aegean VIP transfer routes from Izmir Airport"}
                 </a>
               </li>
             </ul>

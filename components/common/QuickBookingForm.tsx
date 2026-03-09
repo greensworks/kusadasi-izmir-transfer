@@ -89,14 +89,14 @@ export function QuickBookingForm({ content, locale }: QuickBookingFormProps) {
           <div className="mx-auto w-full max-w-2xl pt-2 sm:pt-3">
           <div className="mb-5 border-b border-neutral-700 pb-4 text-left">
             <h2 className="text-xl font-semibold leading-snug text-white sm:text-3xl">
-              {content.locale === "tr" ? "2. Adım: Rezervasyon Bilgileri" : content.locale === "de" ? "Schritt 2: Reservierungsdaten" : "Step 2: Booking Details"}
+              {content.locale === "tr" ? "2. Adım: Yolculuk Bilgileri" : content.locale === "de" ? "Schritt 2: Fahrtdaten" : "Step 2: Trip Details"}
             </h2>
             <p className="mt-2 text-sm text-neutral-300">
               {content.locale === "tr"
-                ? "Aşağıdaki bilgileri girin, ardından WhatsApp üzerinden onaylayın."
+                ? "Uçuş tarihi, iniş saati ve yolcu sayısını girin; rezervasyonunuzu WhatsApp üzerinden anında onaylayın."
                 : content.locale === "de"
-                  ? "Bitte tragen Sie die Daten ein und bestätigen Sie anschließend per WhatsApp."
-                  : "Enter your details below, then confirm via WhatsApp."}
+                  ? "Geben Sie Flugdatum, Landezeit und Personenzahl ein und bestätigen Sie Ihre Reservierung sofort über WhatsApp."
+                  : "Enter your flight date, landing time and passenger count, then instantly confirm your reservation on WhatsApp."}
             </p>
           </div>
 

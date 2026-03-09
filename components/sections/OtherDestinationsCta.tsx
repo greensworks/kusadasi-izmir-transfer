@@ -10,40 +10,43 @@ export function OtherDestinationsCta({ locale }: OtherDestinationsCtaProps) {
   const content =
     locale === "tr"
       ? {
-          title: "Ege'nin Diğer Destinasyonları için VIP Taşımacılık",
-          subtitle: "Kuşadası dışındaki rotalar için de Ütopia İzmir Transfer ile doğrudan rezervasyon yapabilirsiniz.",
+          title: "İzmir Adnan Menderes Havalimanı Çıkışlı Ege VIP Transfer Rotaları",
+          subtitle:
+            "Çeşme, Alaçatı, Foça, Seferihisar, Özdere ve Didim için 7/24 sabit fiyatlı VIP transfer rezervasyonunuzu Ütopia İzmir Transfer ile doğrudan oluşturun.",
           ctas: [
-            "İzmir Çeşme VIP Transfer",
-            "İzmir Alaçatı VIP Transfer",
-            "İzmir Foça VIP Transfer",
-            "İzmir Seferihisar VIP Transfer",
-            "İzmir Özdere VIP Transfer",
-            "İzmir Didim VIP Transfer",
+            "İzmir Havalimanı - Çeşme VIP Transfer",
+            "İzmir Havalimanı - Alaçatı VIP Transfer",
+            "İzmir Havalimanı - Foça VIP Transfer",
+            "İzmir Havalimanı - Seferihisar VIP Transfer",
+            "İzmir Havalimanı - Özdere VIP Transfer",
+            "İzmir Havalimanı - Didim VIP Transfer",
           ],
         }
       : locale === "de"
         ? {
-            title: "VIP-Transfers für weitere Ziele in der Ägäis",
-            subtitle: "Für Strecken außerhalb von Kuşadası können Sie direkt bei Ütopia Izmir Transfer reservieren.",
+            title: "VIP-Transferrouten ab Flughafen Izmir in der Ägäis",
+            subtitle:
+              "Buchen Sie Ihren 24/7 VIP-Transfer mit Festpreis direkt bei Ütopia Izmir Transfer für Çeşme, Alaçatı, Foça, Seferihisar, Özdere und Didim.",
             ctas: [
-              "Izmir - Çeşme VIP Transfer",
-              "Izmir - Alaçatı VIP Transfer",
-              "Izmir - Foça VIP Transfer",
-              "Izmir - Seferihisar VIP Transfer",
-              "Izmir - Özdere VIP Transfer",
-              "Izmir - Didim VIP Transfer",
+              "Flughafen Izmir - Çeşme VIP Transfer",
+              "Flughafen Izmir - Alaçatı VIP Transfer",
+              "Flughafen Izmir - Foça VIP Transfer",
+              "Flughafen Izmir - Seferihisar VIP Transfer",
+              "Flughafen Izmir - Özdere VIP Transfer",
+              "Flughafen Izmir - Didim VIP Transfer",
             ],
           }
         : {
-            title: "VIP Transfers for Other Aegean Destinations",
-            subtitle: "For routes beyond Kusadasi, you can book directly with Ütopia Izmir Transfer.",
+            title: "Aegean VIP Transfer Routes from Izmir Airport",
+            subtitle:
+              "Book your 24/7 fixed-price VIP transfer directly with Ütopia Izmir Transfer for Cesme, Alacati, Foca, Seferihisar, Ozdere and Didim.",
             ctas: [
-              "Izmir - Cesme VIP Transfer",
-              "Izmir - Alacati VIP Transfer",
-              "Izmir - Foca VIP Transfer",
-              "Izmir - Seferihisar VIP Transfer",
-              "Izmir - Ozdere VIP Transfer",
-              "Izmir - Didim VIP Transfer",
+              "Izmir Airport - Cesme VIP Transfer",
+              "Izmir Airport - Alacati VIP Transfer",
+              "Izmir Airport - Foca VIP Transfer",
+              "Izmir Airport - Seferihisar VIP Transfer",
+              "Izmir Airport - Ozdere VIP Transfer",
+              "Izmir Airport - Didim VIP Transfer",
             ],
           };
 

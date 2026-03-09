@@ -68,7 +68,7 @@ const googleReviewsUrl =
 
 export function Testimonials({ locale }: TestimonialsProps) {
   const items = testimonialMap[locale];
-  const title = locale === "tr" ? "Müşteri Yorumları" : locale === "de" ? "Kundenstimmen" : "Customer Reviews";
+  const title = locale === "tr" ? "Misafirlerimizin Ağzından" : locale === "de" ? "Kundenstimmen" : "Customer Reviews";
   const subtitle =
     locale === "tr"
       ? "Doğrulanmış transfer rezervasyonlarından gelen yorumlar."
