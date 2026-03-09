@@ -1,7 +1,7 @@
 export function FloatingWhatsAppButton() {
   return (
     <>
-      <aside className="fixed right-3 top-1/2 z-50 hidden -translate-y-1/2 md:block">
+      <aside className="fixed left-3 top-1/2 z-50 hidden -translate-y-1/2 md:block">
         <div className="flex flex-col gap-2 rounded-xl border border-neutral-700 bg-[#151515]/90 p-2 backdrop-blur">
         <a
           href="https://www.linkedin.com/company/utopia-izmir-transfer/"
@@ -57,7 +57,7 @@ export function FloatingWhatsAppButton() {
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"
-        className="fixed bottom-4 right-4 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white md:left-4 md:right-auto md:h-14 md:w-14"
+        className="fixed bottom-4 right-4 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white md:h-14 md:w-14"
       >
         <svg viewBox="0 0 32 32" className="h-6 w-6 fill-current md:h-7 md:w-7" aria-hidden="true">
           <path d="M19.11 17.42c-.25-.13-1.47-.72-1.7-.8-.23-.08-.4-.13-.56.13-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2.01-1.25-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.51.12-.12.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.41-.56-.41h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09 0 1.23.9 2.42 1.02 2.59.13.17 1.77 2.71 4.29 3.8.6.26 1.07.42 1.44.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z" />
