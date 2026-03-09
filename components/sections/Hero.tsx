@@ -15,7 +15,10 @@ export function Hero({ content, whatsappUrl }: HeroProps) {
         : ["Book with no prepayment", "Easy in-car payment", "24/7 support on WhatsApp"];
 
   return (
-    <section id="top" className="relative flex min-h-[86vh] items-center overflow-hidden py-14 sm:py-16">
+    <section
+      id="top"
+      className="relative flex min-h-[calc(100vh-84px)] items-start overflow-hidden pb-16 pt-12 sm:min-h-[calc(100vh-96px)] sm:pb-20 sm:pt-16"
+    >
       <Image
         src="/images/izmir-adnan-menderes-havalimani-kusadasi-transfer.webp"
         alt={
