@@ -5,6 +5,11 @@ import { SITE_CONFIG } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.domain),
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
