@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { FloatingWhatsAppButton } from "@/components/common/FloatingWhatsAppButton";
@@ -64,6 +65,17 @@ export default async function LocalePage({ params }: PageProps) {
           <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 pointer-events-auto">
             <header className="rounded-lg border border-neutral-700 bg-[#151515] px-4 py-3">
               <div className="flex items-center justify-between gap-3">
+                <a href={`/${castLocale}`} className="shrink-0">
+                  <Image
+                    src="/images/logo.png"
+                    alt={castLocale === "tr" ? "Ütopia İzmir Transfer logosu" : castLocale === "de" ? "Ütopia Izmir Transfer Logo" : "Utopia Izmir Transfer logo"}
+                    width={42}
+                    height={42}
+                    className="rounded-md"
+                    priority
+                  />
+                </a>
+
                 <nav className="hidden min-w-0 flex-1 flex-nowrap items-center justify-center gap-5 overflow-x-auto whitespace-nowrap text-center text-xs font-medium text-neutral-300 sm:text-sm md:flex">
                   <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
                     {castLocale === "tr" ? "İzmir Kuşadası Transfer" : "Izmir Kusadasi Transfer"}
@@ -166,7 +178,16 @@ export default async function LocalePage({ params }: PageProps) {
       <footer className="mt-14 border-t border-neutral-700 pt-8 text-sm text-neutral-300">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-sm font-semibold text-white">Ütopia İzmir Transfer</p>
+            <a href={`/${castLocale}`} className="inline-flex items-center gap-3">
+              <Image
+                src="/images/logo.png"
+                alt={castLocale === "tr" ? "Ütopia İzmir Transfer logosu" : castLocale === "de" ? "Ütopia Izmir Transfer Logo" : "Utopia Izmir Transfer logo"}
+                width={48}
+                height={48}
+                className="rounded-md"
+              />
+              <span className="text-sm font-semibold text-white">Ütopia İzmir Transfer</span>
+            </a>
             <p className="mt-3 text-sm leading-6 text-neutral-400">
               {castLocale === "tr"
                 ? "İzmir Adnan Menderes Havalimanı çıkışlı Kuşadası, Davutlar ve Güzelçamlı transfer hizmeti."
