@@ -57,72 +57,76 @@ export default async function LocalePage({ params }: PageProps) {
   const serviceSchema = buildServiceSchema(castLocale);
 
   return (
-    <main className="w-full pb-20 pt-4 md:pb-0">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <header className="sticky top-3 z-30 rounded-lg border border-neutral-700 bg-[#151515] px-4 py-3">
-          <div className="flex items-center justify-between gap-3">
-            <nav className="hidden min-w-0 flex-1 flex-nowrap items-center justify-center gap-5 overflow-x-auto whitespace-nowrap text-center text-xs font-medium text-neutral-300 sm:text-sm md:flex">
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
-                {castLocale === "tr" ? "İzmir Kuşadası Transfer" : "Izmir Kusadasi Transfer"}
-              </a>
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
-                {castLocale === "tr" ? "İzmir Güzelçamlı Transfer" : "Izmir Guzelcamli Transfer"}
-              </a>
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
-                {castLocale === "tr" ? "İzmir Aydın Transfer" : "Izmir Aydin Transfer"}
-              </a>
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
-                {castLocale === "tr" ? "İzmir Efes Transfer" : "Izmir Ephesus Transfer"}
-              </a>
-            </nav>
-
-            <div className="shrink-0 md:order-2">
-              <LanguageSwitcher currentLocale={castLocale} />
-            </div>
-
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="hidden shrink-0 items-center justify-center rounded-lg bg-[#25D366] px-3 py-2 text-xs font-semibold text-white sm:px-4 sm:text-sm md:inline-flex"
-            >
-              {castLocale === "tr" ? "Bize Ulaşın" : castLocale === "de" ? "Kontakt" : "Contact Us"}
-            </a>
-
-            <details className="group md:hidden">
-              <summary className="inline-flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg border border-neutral-600 text-white marker:hidden">
-                <span className="text-lg leading-none group-open:hidden">☰</span>
-                <span className="hidden text-lg leading-none group-open:inline">✕</span>
-              </summary>
-              <div className="absolute left-0 right-0 top-[calc(100%+8px)] rounded-lg border border-neutral-700 bg-[#151515] p-3">
-                <nav className="flex flex-col gap-2 text-sm font-medium text-neutral-200">
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+    <main className="w-full pb-20 md:pb-0">
+      <section className="relative">
+        <Hero content={content} whatsappUrl={whatsappUrl} />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 pt-4">
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 pointer-events-auto">
+            <header className="rounded-lg border border-neutral-700 bg-[#151515] px-4 py-3">
+              <div className="flex items-center justify-between gap-3">
+                <nav className="hidden min-w-0 flex-1 flex-nowrap items-center justify-center gap-5 overflow-x-auto whitespace-nowrap text-center text-xs font-medium text-neutral-300 sm:text-sm md:flex">
+                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
                     {castLocale === "tr" ? "İzmir Kuşadası Transfer" : "Izmir Kusadasi Transfer"}
                   </a>
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
                     {castLocale === "tr" ? "İzmir Güzelçamlı Transfer" : "Izmir Guzelcamli Transfer"}
                   </a>
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
                     {castLocale === "tr" ? "İzmir Aydın Transfer" : "Izmir Aydin Transfer"}
                   </a>
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="shrink-0 transition hover:text-white">
                     {castLocale === "tr" ? "İzmir Efes Transfer" : "Izmir Ephesus Transfer"}
                   </a>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-1 inline-flex items-center justify-center rounded-lg bg-[#25D366] px-3 py-2 text-xs font-semibold text-white"
-                  >
-                    {castLocale === "tr" ? "Bize Ulaşın" : castLocale === "de" ? "Kontakt" : "Contact Us"}
-                  </a>
                 </nav>
+
+                <div className="shrink-0 md:order-2">
+                  <LanguageSwitcher currentLocale={castLocale} />
+                </div>
+
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hidden shrink-0 items-center justify-center rounded-lg bg-[#25D366] px-3 py-2 text-xs font-semibold text-white sm:px-4 sm:text-sm md:inline-flex"
+                >
+                  {castLocale === "tr" ? "Bize Ulaşın" : castLocale === "de" ? "Kontakt" : "Contact Us"}
+                </a>
+
+                <details className="group relative md:hidden">
+                  <summary className="inline-flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg border border-neutral-600 text-white marker:hidden">
+                    <span className="text-lg leading-none group-open:hidden">☰</span>
+                    <span className="hidden text-lg leading-none group-open:inline">✕</span>
+                  </summary>
+                  <div className="absolute right-0 top-[calc(100%+8px)] w-64 rounded-lg border border-neutral-700 bg-[#151515] p-3">
+                    <nav className="flex flex-col gap-2 text-sm font-medium text-neutral-200">
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                        {castLocale === "tr" ? "İzmir Kuşadası Transfer" : "Izmir Kusadasi Transfer"}
+                      </a>
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                        {castLocale === "tr" ? "İzmir Güzelçamlı Transfer" : "Izmir Guzelcamli Transfer"}
+                      </a>
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                        {castLocale === "tr" ? "İzmir Aydın Transfer" : "Izmir Aydin Transfer"}
+                      </a>
+                      <a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 transition hover:bg-[#222222]">
+                        {castLocale === "tr" ? "İzmir Efes Transfer" : "Izmir Ephesus Transfer"}
+                      </a>
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-1 inline-flex items-center justify-center rounded-lg bg-[#25D366] px-3 py-2 text-xs font-semibold text-white"
+                      >
+                        {castLocale === "tr" ? "Bize Ulaşın" : castLocale === "de" ? "Kontakt" : "Contact Us"}
+                      </a>
+                    </nav>
+                  </div>
+                </details>
               </div>
-            </details>
+            </header>
           </div>
-        </header>
-      </div>
-      <Hero content={content} whatsappUrl={whatsappUrl} />
+        </div>
+      </section>
 
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
       <FunnelSteps locale={castLocale} />
