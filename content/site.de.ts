@@ -86,8 +86,8 @@ export const siteDe: SiteContent = {
         answer: "Wir verfolgen Ihren Flug am Flughafen Izmir Adnan Menderes live, warten bei Verspätungen am Terminalausgang und berechnen keine zusätzliche Wartegebühr.",
       },
       {
-        question: "Welche Zahlungsmöglichkeiten gibt es?",
-        answer: "Die Transferkosten zahlen Sie direkt im Fahrzeug beim Fahrer in bar oder mit Karte. Eine Vorauszahlung ist nicht erforderlich.",
+        question: "Wie erfolgt die Zahlung?",
+        answer: "Die Transferkosten zahlen Sie direkt im Fahrzeug beim Fahrer in bar. Eine Vorauszahlung ist nicht erforderlich.",
       },
       {
         question: "Sind Stornierung und Änderung möglich?",

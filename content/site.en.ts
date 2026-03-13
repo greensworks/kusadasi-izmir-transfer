@@ -86,8 +86,8 @@ export const siteEn: SiteContent = {
         answer: "We track your Izmir Adnan Menderes Airport flight in real time, wait for you at the terminal exit during delays, and do not charge an extra waiting fee.",
       },
       {
-        question: "What payment options are available?",
-        answer: "You can pay your transfer fare directly to the driver in the vehicle by cash or card. No prepayment is required.",
+        question: "How do I pay?",
+        answer: "You can pay your transfer fare directly to the driver in the vehicle in cash. No prepayment is required.",
       },
       {
         question: "Can I cancel or modify my reservation?",

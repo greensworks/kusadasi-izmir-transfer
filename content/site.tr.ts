@@ -86,8 +86,8 @@ export const siteTr: SiteContent = {
         answer: "İzmir Adnan Menderes Havalimanı uçuşunuzu canlı takip ediyoruz; rötar durumunda sizi terminal çıkışında bekliyor ve ek bekleme ücreti almıyoruz.",
       },
       {
-        question: "Ödeme seçenekleri nelerdir?",
-        answer: "İzmir havalimanı transfer ücretini araçta şoföre nakit veya kart ile ödeyebilirsiniz. Ön ödeme zorunlu değildir.",
+        question: "Ödeme nasıl yapılır?",
+        answer: "İzmir havalimanı transfer ücretini araçta şoföre nakit olarak ödeyebilirsiniz. Ön ödeme zorunlu değildir.",
       },
       {
         question: "Rezervasyon iptali ve değişiklik yapılabilir mi?",
